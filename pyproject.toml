@@ -7,7 +7,10 @@ authors = [
     { name = "kurella-shashank", email = "k.shashank2306@gmail.com" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "pypdf>=6.21.4",
+    "python-docx>=1.2.0",
+]
 
 [project.scripts]
 mac-local-rag-assistant = "mac_local_rag_assistant:main"
@@ -22,4 +25,5 @@ module-name = "mac_local_rag"
 [dependency-groups]
 dev = [
     "pytest>=9.2.0",
+    "reportlab>=5.1.0",
 ]
